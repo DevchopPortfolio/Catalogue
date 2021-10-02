@@ -16,10 +16,14 @@ body {
 }
 
 
+
 /* top grid item */
 header {
+    height: auto;
     background:#162466;    
 }
+
+
 
 /* bottom grid item */
 main {
@@ -64,7 +68,7 @@ header h1 {
 
     display: flex;
     flex-wrap: wrap;        
-    justify-content: space-around;    
+    justify-content:space-around;  
 
     background: hsl(200, 100%, 90%);
 }
