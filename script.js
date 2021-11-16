@@ -1,12 +1,12 @@
 let focusframe = document.querySelector('#leftframe');
 
-// create request
+// create the request
 let myrequest = new XMLHttpRequest();
     myrequest.open('GET', 'https://hplussport.com/api/products?order=name');        
     myrequest.send();
 
 
-// receive request
+// receive the request
 myrequest.onload = function() {
     
     let jsonString = myrequest.response;	        
@@ -14,7 +14,7 @@ myrequest.onload = function() {
 
     console.log(jsonData);
     
-    // loop once for each product in the json file
+    // loop once for each product in json file
     jsonData.forEach( (thisitem) => {         
 
         // make clone of card template element
